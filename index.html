@@ -40,11 +40,12 @@
             <img src="img/lee.jpg" class="img-thumbnail rounded-circle" width="90"/>
         </div> 
         
-        <div class="row container max-auto">
+        <div class="row container mx-auto">
             <div class="column" id="posts">
                 Loading content...
             </div>
         </div>
+            
         
         
         
@@ -56,7 +57,7 @@
             function init()
             {
                 rootPath = "https://mysite.itvarsity.org/api/mini-blog/";
-                
+                getAllPosts();
                 document.getElementById("getAll").addEventListener("click", getAllPosts);
                 document.getElementById("getLatest").addEventListener("click", getLatestPosts);
                 document.getElementById("getPopular").addEventListener("click", getPopularPosts);
